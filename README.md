@@ -34,10 +34,10 @@ $username = "root";
 $password = "";
 $dbname = "login_system";  // Your database name
 
-// Create connection
+  // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
+  // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -53,18 +53,21 @@ sql -> INSERT INTO users (username, email, password) VALUES ('admin', 'admin@exa
 Make sure to hash the password using PHP's password_hash() method before inserting it into the database.
 
 ## Usage
-~Registering a New Account
+1.Registering a New Account
 Navigate to the Registration page (register.php).
 Enter a username, email, and password. The password will be hashed automatically for security purposes.
 After successful registration, you will be redirected to the login page.
-~Logging In
+
+2.Logging In
 Navigate to the Login page (login.php).
 Enter your username/email and password.
 After successful authentication, you will be logged in, and your session will be started.
-~Logging Out
+
+3.Logging Out
 Click on the Logout link in the navigation bar (or go to logout.php).
 You will be logged out and redirected to the login page.
-~Password Reset (Optional)
+
+4.Password Reset (Optional)
 If you want to implement a password reset feature, you can integrate PHP mailer or another email service to send a password reset link to the user’s email.
 
 ### Security Features
