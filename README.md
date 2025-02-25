@@ -1,4 +1,4 @@
-# Website Login & Registration System (PHP & MySQL)
+# Authorisation System (PHP & MySQL)
 This is a simple web-based login and registration system built using PHP for server-side logic and MySQL for database management. It allows users to register for an account, log in, and manage their session securely.
 
 * Features
